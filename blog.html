@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cricket.png" type="image/icon type">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>CricBlog</title>
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        article {
+
+            display: grid;
+            grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;
+            /* height: 175vh;*/
+            padding: 10px 0;
+        }
+
+        @media (max-width: 500px) {
+            article {
+                grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;
+            }
+        }
+
+        article * {
+            grid-column: start/end;
+            background-color: white;
+        }
+
+        .txt-ctr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .small-desc {
+            padding: 10px 35px 0px 35px;
+            font-style: normal;
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .head-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .title-blg {
+            padding: 0px 35px 0px 35px;
+            word-wrap: break-word;
+            font-weight: bold;
+        }
+
+        .auth {
+            padding: 10px 35px 0px 35px;
+            font-style: normal;
+            margin-bottom: 10px;
+        }
+
+        .img-cpt {
+            padding: 10px 35px 0px 35px;
+            font-style: normal;
+            color: gray;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .art-cont {
+            padding: 10px 35px 0px 35px;
+            font-style: normal;
+            font-size: 20px;
+            ;
+        }
+
+        .navbar-custom {
+            background-color: #42692f;
+        }
+
+        #c1,
+        #c2,
+        #c3,
+        #c4 {
+            margin-top: 10px;
+            display: inline-block;
+            width: 33%;
+            height: 150px;
+
+        }
+
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+            overflow-y: scroll;
+            height: 100%;
+            display: block;
+
+        }
+        th {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar_top" class="navbar navbar-custom sticky-top" id="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="cricket.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <span style="color: white; font-weight: bold;">CricBlog</span>
+        </a>
+    </nav>
+    <div id="wrapper">
+        <div id="c1" style="margin-left: 4px; text-align: center;">
+            <span style="font-weight: bolder;">ODI Team Rankings</span>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Matches</th>
+                        <th scope="col">Points</th>
+                        <th scope="col">Ratings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>England</td>
+                        <td>47</td>
+                        <td>5708</td>
+                        <td>121</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>India</td>
+                        <td>65</td>
+                        <td>6520</td>
+                        <td>119</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>New Zealand</td>
+                        <td>65</td>
+                        <td>4137</td>
+                        <td>119</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Australia</td>
+                        <td>65</td>
+                        <td>6520</td>
+                        <td>4112</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div id="c2" style="text-align: center">
+            <span style="font-weight: bolder;">Test Team Rankings</span>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Matches</th>
+                        <th scope="col">Points</th>
+                        <th scope="col">Ratings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>England</td>
+                        <td>47</td>
+                        <td>5708</td>
+                        <td>121</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>India</td>
+                        <td>65</td>
+                        <td>6520</td>
+                        <td>119</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>New Zealand</td>
+                        <td>65</td>
+                        <td>4137</td>
+                        <td>119</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Australia</td>
+                        <td>65</td>
+                        <td>6520</td>
+                        <td>4112</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div id="c3" style="text-align: center">
+            <span style="font-weight: bolder;">T20 Team Rankings</span>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Matches</th>
+                        <th scope="col">Points</th>
+                        <th scope="col">Ratings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>England</td>
+                        <td>47</td>
+                        <td>5708</td>
+                        <td>121</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>India</td>
+                        <td>65</td>
+                        <td>6520</td>
+                        <td>119</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>New Zealand</td>
+                        <td>65</td>
+                        <td>4137</td>
+                        <td>119</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Australia</td>
+                        <td>65</td>
+                        <td>6520</td>
+                        <td>4112</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <article>
+        <div>
+            <p class="small-desc">PREVIEW-RR VS DC</p>
+            <h1 class="title-blg">Royals out to work their way around Stokes-shaped void</h1>
+            <p class="auth">By Author on Wed, Apr 14, 2021, 08:54 PM</p>
+            <img height="40%" width="75%" class="head-img" src="art5.webp" />
+            <figcaption class="img-cpt">Sanju Samson, despite losing Ben Stokes, would be hoping his side capitalizes on
+                the missing South African pace duo © BCCI</figcaption>
+            <p class="art-cont">Ben Stokes will no longer be available for Rajasthan Royals this season. In their season
+                opener against Punjab Kings, Royals' new captain Sanju Samson constantly sought Stokes's counsel on the
+                field, feeding off the experience of the English all-rounder. Stokes even was seen having chats with
+                Chetan Sakariya when the youngster had the ball in hand. His broken finger therefore comes as a big blow
+                not just for Rajasthan, but Samson too, which could be why Stokes will continue to stay on in India
+                despite the injury.<br /><br />
+
+                After their opening game heartbreak, Samson will now have to try and outwit last season's finalists
+                Delhi Capitals, who despite missing mainstays like Kagiso Rabada, Anrich Nortje and Axar Patel, put away
+                Chennai Super Kings rather comfortably. However, they too have been hit with a snag leading into the
+                contest, once again levelling the playing field. The Capitals would've hoped to bring in their South
+                African pace duo, but COVID-related logistical issues have rendered them unavailable - something the
+                Royals would love to capitalise on.<br /><br />
+                "The feeling in the squad is really good. We're all eager to get back on the pitch and do well. We
+                played well in the last game and unfortunately didn't quite get over the line. I think it's important
+                for us to follow the process and take it game by game. Important to focus on what our job is, that is to
+                express ourselves and play the brand of cricket we want to play. I believe we have a strong squad that
+                is capable of producing the right results in different situations." - Sanju Samson.<br><br>
+                <a href="https://www.cricbuzz.com/cricket-news/117048/royals-out-to-work-their-way-around-stokes-shaped-void">Read More>></a>
+            </p>
+        </div>
+        
+    </article>
+    <hr style="margin-right: 150px;margin-left: 150px;">
+    <article>
+        <div>
+            <p class="small-desc">ICC ANTI-CORRUPTION</p>
+            <h1 class="title-blg">Streak handed eight-year ban for breaching ICC's anti-corruption code</h1>
+            <p class="auth">By Author on Wed, Apr 14, 2021, 05:25 PM</p>
+            <img height="40%" width="75%" class="head-img" src="art1.jpg" />
+            <figcaption class="img-cpt">Heath Streak was in violation of ICC's anti-corruption code during his tenure as
+                Zimbabwe coach from 2016 to 2018</figcaption>
+            <p class="art-cont">Former Zimbabwe captain Heath Streak has been handed an eight-year ban from all cricket
+                for breaching ICC's Anti-Corruption Code. The 47-year-old accepted five charges levelled against him for
+                his role as the coach of Zimbabwe between 2016-2018 and as the coach of various franchises, including
+                for the Kolkata Knight Riders during IPL 2018 and the Kabul Zwanan during APL 2018.<br /><br />
+                During the Tribunal hearing, one of the factors that went in favour of Streak was that his offences did
+                not affect the outcome of the relevant matches. Streak will be free to resume his involvement in the
+                game on 28 March 2029.<br /><br />
+
+                Streak's charges include "disclosing inside information...(that) may be used for betting purposes"
+                during matches in the 2018 Tri-Series involving Zimbabwe, Bangladesh and Sri Lanka, the Zimbabwe v
+                Afghanistan series in 2018, the Indian Premier League 2018 and the Afghanistan Premier League 2018.
+                Additionally, Streak was found to have "facilitated or attempted to facilitate the introduction of four
+                different players, including a national captain" to someone who could have approached them to get
+                insider information for betting purposes.<br /><br />
+                The trouble for Streak traces back to September 2017, when he started a WhatsApp conversation with an
+                Indian gentleman Mr X (identity redacted by ICC) who was interested in organizing a T20 league in
+                Zimbabwe. The ICC reveals that Mr X had come out clean to Streak about his betting links and also
+                requested his bank account outside Zimbabwe. The conversations between the two lasted for 15 months, the
+                period during which he's been found guilty of breaching ICC's Anti-Corruption Code.<br><br>
+                <a href="https://www.cricbuzz.com/cricket-news/117043/streak-handed-eight-year-ban-for-breaching-iccs-anti-corruption-code">Read More>></a>
+            </p>
+        </div>
+    </article>
+    <hr style="margin-right: 150px;margin-left: 150px;">
+    <article>
+        <div>
+            <p class="small-desc">INDIAN PREMIER LEAGUE, 2021</p>
+            <h1 class="title-blg">Delhi Capitals' Nortje under COVID scare</h1>
+            <p class="auth">By Author on Wed, Apr 14, 2021, 05:21 PM</p>
+            <img height="40%" width="75%" class="head-img" src="art2.webp" />
+            <figcaption class="img-cpt">Anrich Nortje's situation is another scare for the Capitals to handle after the
+                positive result of Axar Patel © BCCI/IPL</figcaption>
+            <p class="art-cont">CricBlog understands that South African pacer Anrich Nortje tested negative on arrival
+                but later tested positive and negative thereafter. He's asymptomatic at the moment with results of a
+                further test awaited today. Nortje has been in quarantine during these developments, and was to join the
+                team bubble after the test results today.<br /><br />
+
+                Nortje's situation is another scare for the Capitals to handle after the positive result of Axar Patel.
+                Nortje, who flew in to India along with fellow paceman Kagiso Rabada, joins a growing list of Covid-19
+                concerns in the IPL 2021.<br /><br />
+
+                Apart from DC all-rounder Axar, Mumbai Indians' scout and wicketkeeping consultant Kiran More, as well
+                as RCB's Daniel Sams and Devdutt Paddikal had tested positive. However, Padikkal has since linked up
+                with the squad in Chennai after a negative COVID-19 result.<br /><br />
+
+                More to follow...
+            </p>
+        </div>
+    </article>
+    <hr style="margin-right: 150px;margin-left: 150px;">
+    <article>
+        <div>
+            <p class="small-desc">BIG BLOW</p>
+            <h1 class="title-blg">Broken finger rules Ben Stokes out of IPL 2021</h1>
+            <p class="auth">By Author on Tue, Apr 13, 2021, 11:05 PM</p>
+            <img height="40%" width="75%" class="head-img" src="art4.jpg" />
+            <figcaption class="img-cpt">Ben Stokes hurt his finger while fielding in RR's IPL 2021 opener against Punjab
+                Kings. © BCCI/IPL</figcaption>
+            <p class="art-cont">Rajasthan Royals all-rounder Ben Stokes has been ruled out of IPL 2021 after picking up
+                a finger injury in the team's tournament opener against Punjab Kings on April 12. Stokes is understood
+                to have broken his index finger on the left hand while taking a tumbling catch to dismiss Chris Gayle
+                off the bowling of Riyan Parag.<br /><br />
+
+                The development is a significant setback for the Royals, who are hoping to improve on an eighth place
+                finish last season. They're already missing the services of Jofra Archer to a hand injury and even
+                though the fast bowler has resumed light training, it is uncertain when he'll be cleared to resume
+                playing and can join the team bubble in India.<br /><br />
+
+                Stokes, who also missed out six games of last season's league phase after he'd travelled to New Zealand
+                to be with his ailing father, will stay with the group in India "to provide his valued support and
+                inputs off the field."<br /><br />
+
+                David Miller and Liam Livingstone are the backup overseas batsmen in the Royals squad. The franchise
+                confirmed that they were reviewing potential candidates to replace the England star.<br /><br />
+
+                The Royals, who lost their opening encounter to the Punjab Kings, take on the Delhi Capitals on Thursday
+                (April 15) in their next encounter.<br><br>
+                <a href="https://www.cricbuzz.com/cricket-news/117038/injured-stokes-ruled-out-of-ipl-2021">Read More>></a>
+            </p>
+        </div>
+    </article>
+    <hr style="margin-right: 150px;margin-left: 150px;">
+    <article style="margin-bottom: 70px;">
+        <div>
+            <p class="small-desc">VIDEO HIGHLIGHTS</p>
+            <h1 class="title-blg">Kolkata blinked big time, can't believe they lost vs Mumbai: Harsha Bhogle</h1>
+            <p class="auth">By Author on Tue, Apr 14, 2021 11:05 PM</p>
+            <iframe width="1025.45px" height="493.65px" class="head-img" src="https://www.youtube.com/embed/V-zCFWM8x5w"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <p class="art-cont">From cruising at 103-2 to choking in the end, Kolkata's Mumbai jinx continued! On
+                CricBlog Live, Harsha Bhogle & Joy Bhattacharjya analyse #EoinMorgan​ & Co's shocking performance
+            </p>
+        </div>
+    </article>
+
+
+    <footer style="background-color: #42692f;">
+
+
+        <div class="footer-copyright text-center py-3" style="text-align: center;">
+
+
+            <h5 style="color: white; font-weight: bold; margin-top: 5px;">CricBlog</h5>
+            <p style="color: white; font-weight: bold; margin-top: 5px;">The one place for cricket related news</p>
+            <img src="cricket.png" width="75" height="75" class="d-inline-block align-top" alt="">
+
+        </div>
+
+
+        <div class="footer-copyright text-center py-3" style="color: white; font-weight: bold;">© 2020 Copyright: Mukund
+            N Acharya
+
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
